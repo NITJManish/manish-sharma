@@ -32,6 +32,10 @@ const productSchema=new mongoose.Schema({
             message:"please select correct category",
         },
     },
+    seller:{
+        type:String,
+        required:[true,"please enter product seller"],
+    },
     reviews:[
         {
             user:{
@@ -56,3 +60,5 @@ const productSchema=new mongoose.Schema({
     },
 
 },{timestamps:true});
+
+export default mongoose.model("Product",productSchema);

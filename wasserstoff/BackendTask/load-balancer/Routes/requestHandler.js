@@ -7,8 +7,8 @@ const { getWeightedRandomEndpoint, getLeastResponseTimeEndPoint }=require('../ut
 class RequestHandler{
     constructor(){
         this.fifoQueue=new FIFOQueue();
-        this.PriorityQueue=new PriorityQueue();
-        this.RoundRobinQueue=new RoundRobinQueue();
+        this.priorityQueue=new PriorityQueue();
+        this.roundRobinQueue=new RoundRobinQueue();
     }
 
     addRequestToFIFO(req){
@@ -16,11 +16,11 @@ class RequestHandler{
     }
 
     addRequestToPriority(req,priority){
-        this.PriorityQueue.enqueue(req,priority);
+        this.priorityQueueriorityQueue.enqueue(req,priority);
     }
 
     addRequestToRoundRobin(){
-        this.RoundRobinQueue.enqueue(req);
+        this.roundRobinQueueoundRobinQueue.enqueue(req);
     }
 
     async processFIFO(){
@@ -31,15 +31,15 @@ class RequestHandler{
     }
 
     async processPriority(){
-        while(!this.PriorityQueue.isEmpty()){
-            const req=this.RoundRobinQueue.dequeue();
+        while(!this.PriorityQueueriorityQueue.isEmpty()){
+            const req=this.roundRobinQueue.dequeue();
             await this.forwordRequest(req);
         }
     }
 
     async processRoundRobin(){
         while(!this.processRoundRobin.isEmpty()){
-           const req=this.RoundRobinQueue.dequeue();
+           const req=this.roundRobinQueue.dequeue();
            await this.forwordRequest(req);
         }
     }
@@ -64,6 +64,7 @@ class RequestHandler{
 
         if(endpoint){
             try{
+                console.log(endpoint+req.url);
                 const res=await axios({
                     method:req.method,
                     url:endpoint+req.url,//forwaord req to the selected endpoint
@@ -72,10 +73,11 @@ class RequestHandler{
                 });
                 req.res.status(res.status).send(res.data);
             }catch(error){
+                console.log(error);
                 req.res.status(500).send('Error forwording request');
             }
         }else{
-            req.res.status(500).send("No suitable endpoint found");
+            req.req.res.status(500).send("No suitable endpoint found");
         }
     }
 }

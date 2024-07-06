@@ -21,16 +21,13 @@ const logRequest=(req)=>{
 const logMetrics=(req,res)=>{
     logger.info({
         message:'Response sent',
-        // // statusCode: res.statusCode,
-        // responseTime:res.get('x-Response-Time')
     });
 };
 
 const logQueueMetrics=(req,res)=>{
     logger.info({
         message:'Queue metrics',
-        queueType,
-        queueLength
+        queueType:'queue-type'
     });
 };
 

@@ -1,5 +1,5 @@
 const express = require('express');
-// const dynamicRouter = require('./Routes/requestHandler');
+const dynamicRouter = require('./Routes/requestHandler');
 const { logMetrics, logQueueMetrics } = require('./utils/logger');
 
 const RequestHandler=require('./Routes/requestHandler');
@@ -13,8 +13,6 @@ const requestHandler=new RequestHandler();
 
 app.use(express.json());
 
-//dynamic routing middleware
-// app.use(dynamicRouter);
 
 //Request logging middleware
 app.use((req,res,next)=>{
@@ -48,7 +46,6 @@ app.use((req,res,next)=>{
             res.status(400).send("Invalid queue type");
             return;
     }
-    next();
 });
 
 //metrics logging middleware

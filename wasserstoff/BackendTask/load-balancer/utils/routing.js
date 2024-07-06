@@ -9,13 +9,13 @@ const endPoints=[
         type:'REST',
         url:'http://localhost:3002',
         weight:1,
-        responseTime:100
+        responseTime:200
     },
     {
         type:'REST',
         url:'http://localhost:3003',
         weight:1,
-        responseTime:100
+        responseTime:300
     },
     {
         type:'GraphQL',

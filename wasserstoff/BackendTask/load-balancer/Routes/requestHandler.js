@@ -16,11 +16,11 @@ class RequestHandler{
     }
 
     addRequestToPriority(req,priority){
-        this.priorityQueueriorityQueue.enqueue(req,priority);
+        this.priorityQueue.enqueue(req,priority);
     }
 
     addRequestToRoundRobin(){
-        this.roundRobinQueueoundRobinQueue.enqueue(req);
+        this.roundRobinQueue.enqueue(req);
     }
 
     async processFIFO(){

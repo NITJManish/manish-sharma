@@ -1,0 +1,27 @@
+syntax="proto2";
+
+
+package item;
+
+service ItemService{
+    rpc CreateItem(Item) returns (Item);
+    rpc GetItems(Empty) returns (ItemList);
+    rpc GetItem(ItemId) returns (Item);
+    rpc UpdateItem(Item) returns (Item);
+    rpc DeleteItem(ItemId) returns (Empty);
+}
+
+message Item{
+    optional string id=1;
+    optional string name=2;
+    optional string description=3;
+}
+
+message ItemId{
+    optional string id=1;
+}
+message ItemList{
+    repeated Item items=1;
+}
+
+message Empty {}

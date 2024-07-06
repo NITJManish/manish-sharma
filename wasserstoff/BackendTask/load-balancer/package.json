@@ -1,0 +1,20 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node loadbalancer.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon loadbalancer.js",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon loadbalancer.js"
+  },
+  "author": "Manish sharma",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "winston": "^3.13.0"
+  }
+}

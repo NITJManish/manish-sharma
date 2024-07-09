@@ -2,7 +2,7 @@ const axios=require('axios');
 const FIFOQueue=require('../Queue/fifoQueue');
 const PriorityQueue=require('../Queue/priorityQueue');
 const RoundRobinQueue=require('../Queue/roundRobin');
-const { getWeightedRandomEndpoint, getLeastResponseTimeEndPoint }=require('../utils/routing');
+const { getWeightedRandomEndpoint, getLeastResponseTimeEndPoint, getRandomEndpoint }=require('../utils/routing');
 
 class RequestHandler{
     constructor(){

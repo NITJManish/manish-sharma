@@ -52,10 +52,11 @@ server.addService(itemProto.ItemService.service,{
 });
 
 
-server.bindAsync('127.0.0.1:50051',grpc.ServerCredentials.createInsecure(),()=>{
+server.bindAsync('http://localhost:50051',grpc.ServerCredentials.createInsecure(),()=>{
     console.log("grpc server running on port 50051");
     server.start();
 });
+
 
 
 

@@ -91,3 +91,84 @@
 {"level":"info","message":"Queue metrics","queueType":"queue-type"}
 {"level":"info","message":"Response sent"}
 {"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Response sent"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET","timestamp":1720705701961}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET","timestamp":"2024-07-11 13:52:31"}
+{"level":"info","message":"Queue metrics","queueType":"queue-type"}
+{"level":"info","message":"Response sent","method":"GET","timestamp":"2024-07-11 13:52:50"}
+{"level":"info","message":"Response sent","method":"GET","timestamp":"2024-07-11 13:55:07"}
+{"level":"info","message":"Response sent","method":"GET","timestamp":"2024-07-11 13:57:17"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 13:57:51"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:00:10"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:04:12"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:05:18"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:06:10"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:07:31"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:08:13"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"routing-stategy","timestamp":"2024-07-11 14:09:59"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:10:43"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:13:32"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:20:07"}
+{"level":"info","message":"Queue metrics","queueType":"FIFO"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:23:02"}
+{"level":"info","message":"Queue metrics","queueType":"FIFO"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:27:28"}
+{"level":"info","message":"Queue metrics","queueType":"FIFO"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:28:29"}
+{"level":"info","message":"Queue metrics","queueType":"FIFO"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:28:51"}
+{"level":"info","message":"Queue metrics","queueType":"FIFO"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:29:03"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:31:21"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:35:06"}
+{"level":"info","message":"Response sent","method":"GET","routeStrategy":"least-response-time","timestamp":"2024-07-11 14:36:20"}

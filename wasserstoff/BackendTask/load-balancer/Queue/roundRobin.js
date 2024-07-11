@@ -5,6 +5,9 @@ class RoundRobinQueue{
     }
 
     enqueue(request){
+        if (!Array.isArray(this.queue)) {
+            this.queue = []; // Initialize or reset queue if necessary
+        }
         this.queue.push(request);
     }
 

@@ -12,6 +12,7 @@ class RequestHandler{
     }
 
     addRequestToFIFO(req){
+        // console.log("add req to fifo",req);
         this.fifoQueue.enqueue(req);
     }
 
@@ -19,7 +20,8 @@ class RequestHandler{
         this.priorityQueue.enqueue(req,priority);
     }
 
-    addRequestToRoundRobin(){
+    addRequestToRoundRobin(req){
+        // console.log("request coming or not",req);
         this.roundRobinQueue.enqueue(req);
     }
 
@@ -31,22 +33,26 @@ class RequestHandler{
     }
 
     async processPriority(){
-        while(!this.PriorityQueueriorityQueue.isEmpty()){
-            const req=this.roundRobinQueue.dequeue();
+        while(!this.priorityQueue.isEmpty()){
+            const req=this.priorityQueue.dequeue();
             await this.forwordRequest(req);
         }
     }
 
     async processRoundRobin(){
-        while(!this.processRoundRobin.isEmpty()){
+        while(!this.roundRobinQueue.isEmpty()){
            const req=this.roundRobinQueue.dequeue();
            await this.forwordRequest(req);
         }
+        // console.log("request is coming or not",reqtype);
     }
 
     async forwordRequest(req){
+        // console.log(req);
+     
         let endpoint;
-        switch(req.headers['routing-stategy']){
+        const routeStrategy=req.headers['routing-stategy'];
+        switch(routeStrategy){
             case 'least-response-time':
                 endpoint=getLeastResponseTimeEndPoint();
                 break;
@@ -64,7 +70,7 @@ class RequestHandler{
 
         if(endpoint){
             try{
-                console.log(endpoint+req.url);
+                // console.log(endpoint+req.url);
                 const res=await axios({
                     method:req.method,
                     url:endpoint+req.url,//forwaord req to the selected endpoint

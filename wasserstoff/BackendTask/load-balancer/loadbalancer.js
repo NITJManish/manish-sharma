@@ -24,7 +24,7 @@ app.use((req,res,next)=>{
 app.use((req,res,next)=>{
     const queueType=req.headers['queue-type'];
     //attach response object to req forwording
-    req.res=res;
+    // req.res=res;
     switch(queueType){
         case 'FIFO':
             requestHandler.addRequestToFIFO(req);
